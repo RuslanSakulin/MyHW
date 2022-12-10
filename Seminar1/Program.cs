@@ -10,6 +10,10 @@ if (num1 > num2)
 {
     Console.WriteLine("max = " + num1 + " " + "min = " + num2);
 }
+//if (num1 == num2)
+//{
+//    Console.WriteLine($"{num1} = {num2}");
+//}
 else
 Console.WriteLine("max = " + num2 + " " + "min = " + num1);
 */
@@ -47,7 +51,7 @@ Console.WriteLine("Упс( Это число - нечетное(");
 */
 
 //Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-
+/*
 Console.Write("Введите некоторое число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
@@ -66,3 +70,4 @@ while (current <= N)
     current = current + 2;
     }
 }
+*/
