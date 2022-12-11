@@ -1,4 +1,5 @@
 ﻿//Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
 /*
 int ProductAB (int a, int b)
 {
@@ -14,7 +15,7 @@ int ProductAB (int a, int b)
 
 Console.Write("Введите число А: ");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число В: ");
+Console.Write("Введите натуральное число В: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
 int res = ProductAB(a, b);
@@ -23,24 +24,28 @@ Console.WriteLine ($"Число {a} в степени {b} = {res}");
 
 //Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
+/*
 int SumNum(int num)
 {
-    int count = 0;
-    while(num!=0)
+    int sum = 0;
+    int r = 0;
+    while(num != 0)
     {
-        num = num /10;
-        count++;
+        r = num % 10;
+        sum = sum + r;
+        num = num / 10;
     }
-    return count;
+    return sum;
 }
 Console.Write("Input a number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
 int result = SumNum(a);
-Console.WriteLine($"Count of numbers is: {result}");
-
+Console.WriteLine($"Sum of numbers of {a} is: {result}");
+*/
 
 //Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+
 /*
 int[] CreateArray(int size)
 {
@@ -68,26 +73,3 @@ int length = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateArray(length);
 ShowArray(myArray);
 */
-
-
-
-/*
-int GetSum(int num)
-{
-    int sum = 0;
-
-    for(int current = 1; current <= num; current++)
-    {
-        sum = sum + current;
-    }
-    return sum;
-}
-Console.Write("Input a number: ");
-int a = Convert.ToInt32(Console.ReadLine());
-
-int result = GetSum(a);
-Console.WriteLine($"Sum of numbers from 1 to (a) is {result}");
-*/
-
-//Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
-
