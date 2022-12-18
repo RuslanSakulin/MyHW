@@ -29,7 +29,7 @@ double b2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число k2: ");
 double k2 = Convert.ToInt32(Console.ReadLine());
 
-if(b1 == b2 && b1 == b2) Console.WriteLine("Эти прямые совпадают!");
+if(b1 == b2 && k1 == k2) Console.WriteLine("Эти прямые совпадают!");
 else if (k1 == k2) Console.WriteLine("Эти прямые параллельны!");
 else 
 {
